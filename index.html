@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2d05e8747.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="site-nav">
             <a href="#">Home</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="resume.html">Resume</a>
@@ -18,32 +20,39 @@
         </nav>
     </header>
     <main>
-        <h1>Taha Shahid</h1>
-        <h2>High School Student</h2>
-        <section>
-            <img src="" alt="">
-            <a href="">Visit My Portfolio</a>
-        </section>
-        <section>
-            <img src="" alt="">
-            <a href="">Contact Me</a>
-        </section>
-        <section>
-            <img src="" alt="">
-            <a href="">View My Resume</a>
-        </section>
-        <section>
-            <img src="" alt="">
-            <a href="">About Me</a>
-        </section>
-
-        <img src="images/home-graphic.svg" alt="Vector graphic cloud raining bits">
+        <div class="home-wrapper">
+            <div>
+                <h1>Taha Shahid</h1>
+                <h2>High School Student</h2>
+                <section>
+                    <img src="" alt="">
+                    <a href="">Visit My Portfolio</a>
+                </section>
+                <section>
+                    <img src="" alt="">
+                    <a href="">Contact Me</a>
+                </section>
+                <section>
+                    <img src="" alt="">
+                    <a href="">View My Resume</a>
+                </section>
+                <section>
+                    <img src="" alt="">
+                    <a href="">About Me</a>
+                </section>
+            </div>
+            <img src="images/home-graphic.svg" alt="Vector graphic cloud raining bits">
+        </div>
     </main>
     <footer>
-        <p>&copy;2024 Taha Shahid</p>
-        <a href="https://www.linkedin.com/in/taha-shahid-762a55307/"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
-        <a href="https://github.com/TahaS-Coding"><img src="images/github-icon.svg" alt="GitHub icon"></a>
-        <a href="mailto:shahidtaha100@gmail.com"><img src="images/email-icon.svg" alt="email icon"></a>
+        <div class="footer-wrapper">
+            <p>&copy;2024 Taha Shahid</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/taha-shahid-762a55307/" class="footer-linkedin"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
+                <a href="https://github.com/TahaS-Coding" class="footer-github"><img src="images/github-icon.svg" alt="GitHub icon"></a>
+                <a href="mailto:shahidtaha100@gmail.com" class="footer-email"><img src="images/email-icon.svg" alt="email icon"></a>
+            </div>
+        </div>
     </footer>
 </body>
 
