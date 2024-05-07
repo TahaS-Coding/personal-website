@@ -33,11 +33,19 @@ header {
 main {
     background-image: linear-gradient(#63b2ebbc, #5FACE3);
 }
+.button{
+    background-color: #5091BF;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #437aa1;
+}
 
 footer {
     background-color: #42789E;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .footer-wrapper {
@@ -90,8 +98,71 @@ footer {
     width: 40%;
 }
 
+.home-wrapper h1{
+    font-size: 5.2vw;
+    font-weight: 300;
+}
+.home-wrapper h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.home-squares{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.home-squares section{
+    width: 45%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: white;
+    border-radius: 1vh;
+}
+.home-squares>section:nth-of-type(1), .home-squares>section:nth-of-type(2){
+    margin-bottom: 25px;
+}
+.home-squares section img{
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.home-squares section a{
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.75vh;
+    text-align: center;
+    padding: 5px 0;
+}
+
 
 /* header button animation */
+.site-nav>a:hover {
+    animation: bg-hover ease-out 1.25s, color-hover ease-out 0.25s;
+    background-color: white;
+    color: #42789E;
+    text-align: center;
+}
+
+@keyframes bg-hover {
+    from {
+        background-color: #42789E;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+@keyframes color-hover {
+    from {
+        color: white;
+    }
+
+    to {
+        color: #42789E;
+    }
+}
 /* bottom */
 .site-nav>a::after {
     content: '';
@@ -105,6 +176,7 @@ footer {
     transform-origin: bottom right;
     transition: transform 0.2s ease-in-out;
 }
+
 .site-nav>a::before {
     content: '';
     position: absolute;
@@ -117,11 +189,13 @@ footer {
     transform-origin: bottom left;
     transition: transform 0.2s ease-in-out;
 }
+
 .site-nav>a:hover::after,
-.site-nav>a:hover::before{
+.site-nav>a:hover::before {
     transition-delay: 0.2s;
     transform: scaleX(1);
 }
+
 /* top */
 .site-nav>a .span-one::after {
     content: '';
@@ -135,6 +209,7 @@ footer {
     transform-origin: top right;
     transition: transform 0.2s ease-in-out;
 }
+
 .site-nav>a .span-one::before {
     content: '';
     position: absolute;
@@ -147,11 +222,13 @@ footer {
     transform-origin: top left;
     transition: transform 0.2s ease-in-out;
 }
+
 .site-nav>a:hover .span-one::after,
 .site-nav>a:hover .span-one::before {
     transition-delay: 0.2s;
     transform: scaleX(1);
 }
+
 /* left */
 .site-nav>a .span-two::after {
     content: '';
@@ -163,6 +240,7 @@ footer {
     background-color: white;
     transition: height 0.2s ease-in-out 0.2s;
 }
+
 .site-nav>a .span-two::before {
     content: '';
     position: absolute;
@@ -173,10 +251,13 @@ footer {
     background-color: white;
     transition: height 0.2s ease-in-out 0.2s;
 }
-.site-nav>a:hover .span-two::after, .site-nav>a:hover .span-two::before{
+
+.site-nav>a:hover .span-two::after,
+.site-nav>a:hover .span-two::before {
     height: 50%;
     transition-delay: 0s;
 }
+
 /* right */
 .site-nav>a .span-three::after {
     content: '';
@@ -188,6 +269,7 @@ footer {
     background-color: white;
     transition: height 0.2s ease-in-out 0.2s;
 }
+
 .site-nav>a .span-three::before {
     content: '';
     position: absolute;
@@ -198,7 +280,9 @@ footer {
     background-color: white;
     transition: height 0.2s ease-in-out 0.2s;
 }
-.site-nav>a:hover .span-three::after, .site-nav>a:hover .span-three::before{
+
+.site-nav>a:hover .span-three::after,
+.site-nav>a:hover .span-three::before {
     height: 50%;
     transition-delay: 0s;
 }
