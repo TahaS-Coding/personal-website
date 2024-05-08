@@ -88,6 +88,8 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0 10%;
+    padding-left: 25px;
+    padding-bottom: 35px;
 }
 
 .home-wrapper>div {
@@ -105,6 +107,7 @@ footer {
 .home-wrapper h2{
     font-size: 40px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 .home-squares{
     display: flex;
@@ -126,6 +129,7 @@ footer {
     width: 80%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    margin: 15px 0;
 }
 .home-squares section a{
     width: 80%;
@@ -134,12 +138,17 @@ footer {
     border-radius: 0.75vh;
     text-align: center;
     padding: 5px 0;
+    margin-bottom: 15px;
+}
+.home-squares section a:active{
+    border: 2px solid #254459;
+    padding: 3.5px 0;
 }
 
 
 /* header button animation */
 .site-nav>a:hover {
-    animation: bg-hover ease-out 1.25s, color-hover ease-out 0.25s;
+    animation: bg-hover ease-out 1s, color-hover ease-out 0.25s;
     background-color: white;
     color: #42789E;
     text-align: center;
@@ -285,4 +294,11 @@ footer {
 .site-nav>a:hover .span-three::before {
     height: 50%;
     transition-delay: 0s;
+}
+/* h2 animation */
+.home-wrapper h2{
+    animation: homeHeading 15s infinite;
+}
+@keyframes homeHeading {
+    
 }
