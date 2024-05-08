@@ -40,6 +40,9 @@ main {
 .button:hover{
     background-color: #437aa1;
 }
+.button:active{
+    background-color: #437aa1;
+}
 
 footer {
     background-color: #42789E;
@@ -139,10 +142,6 @@ footer {
     text-align: center;
     padding: 5px 0;
     margin-bottom: 15px;
-}
-.home-squares section a:active{
-    border: 2px solid #254459;
-    padding: 3.5px 0;
 }
 
 
@@ -297,8 +296,40 @@ footer {
 }
 /* h2 animation */
 .home-wrapper h2{
-    animation: homeHeading 15s infinite;
+    animation: homeHeading 12s infinite;
 }
 @keyframes homeHeading {
-    
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    28%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0;
+    }
+    38%{
+        opacity: 1;
+    }
+    61%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 }
