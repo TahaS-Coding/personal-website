@@ -145,54 +145,183 @@ footer {
 }
 
 /* resume */
+.resume-main{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 849.75px;
+    margin: auto;
+}
 .resume-main h1{
-    text-align: center;
+    align-self: center;
     font-size: 90px;
     font-weight: 400;
 }
 .resume-wrapper{
     display: flex;
     flex-flow: row nowrap;
-    width: 50%;
-    margin: auto;
+    width: 849.75px;
+    height: 1100px;
+    padding-bottom: 25px;
 }
 
 .resume-column-one{
     background-color: #EDEDED;
     width: 3%;
 }
+
 .resume-column-two{
     background-color: #072739;
     width: 45%;
 }
-.resume-column-two>section:nth-of-type(2), .resume-column-two>section:nth-of-type(3){
-    margin-left: 20px;
-}
+
 .resume-wrapper h2{
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-top: 50px;
 }
 .resume-column-two p{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 400;
     color: #072739;
     background-color: white;
-    width: 220px;
+    width: 300px;
     height: 30px;
     text-align: center;
     margin: auto;
     text-transform: uppercase;
+    margin-bottom: 127px;
 }
+.resume-heading-three{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #7676762b;
+}
+.resume-heading-three span{
+    height: 60px;
+    width: 25px;
+    background-color: #FFBD59;
+}
+.resume-heading-three h3{
+    font-size: 25px;
+    color: #FFBD59;
+    padding-left: 45px;
+}
+.resume-column-two h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.resume-wrapper ul{
+    list-style-type: none;
+}
+.resume-column-two>section:nth-of-type(2) section{
+    padding-left: 40px;
+}
+.resume-column-two>section:nth-of-type(2) li{
+    font-weight: 300;
+}
+.resume-column-two>section:nth-of-type(3) li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.resume-column-two>section:nth-of-type(3) li div{
+    background-color: #FFBD59;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-column-two>section:nth-of-type(3) li div img{
+    width: 75%;
+}
+.resume-column-two>section:nth-of-type(3) li a{
+    font-weight: 300;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.resume-column-two>section:nth-of-type(3) li span{
+    font-weight: 300;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.resume-column-two>section:nth-of-type(2){
+    margin-bottom: 15px;
+}
+.resume-column-two>section:nth-of-type(2) section:first-of-type{
+    margin-top: 15px;
+}
+.resume-column-two>section:nth-of-type(3) ul{
+    margin-top: 15px;
+}
+
 .resume-column-three{
     background-color: #EDEDED;
     width: 45%;
 }
+.resume-column-three>section:nth-of-type(1) h3{
+    margin-top: 65px;
+}
+.resume-column-three>section:nth-of-type(1){
+    margin-bottom: 10px;
+}
+.resume-column-three h3{
+    color: #072739;
+    font-size: 25px;
+}
+.resume-column-three h4{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.resume-column-three>section:nth-of-type(1), .resume-column-three>section:nth-of-type(2) section, .resume-column-three>section:nth-of-type(3) section{
+    padding-left: 40px;
+}
+.resume-column-three p{
+    color: black;
+    font-size: 15px;
+}
+.resume-column-three li{
+    color: black;
+}
+.resume-column-three li ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.resume-column-three li ul li{
+    font-size: 15px;
+}
+.resume-column-three>section:nth-of-type(2) section:first-of-type{
+    margin-top: 15px;
+}
+.resume-column-three>section:nth-of-type(2) section:last-of-type{
+    margin-bottom: 32.5px;
+}
+.resume-column-three>section:nth-of-type(3) h4{
+    margin-top: 15px;
+}
+
 .resume-column-four{
     background-color: #072739;
     width: 7%;
+}
+
+.resume-main .button{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.75vh;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 15px;
 }
 
 /* header button animation */
