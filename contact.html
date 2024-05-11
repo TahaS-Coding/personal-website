@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2d05e8747.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="resume.html">Resume</a>
-            <a href="about.html">About Me</a>
-            <a href="#">Contact</a>
+        <nav class="site-nav">
+            <a href="index.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Home</a>
+            <a href="portfolio.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Portfolio</a>
+            <a href="resume.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Resume</a>
+            <a href="about.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>About Me</a>
+            <a href="#"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Contact</a>
         </nav>
     </header>
-    <main>
+    <main class="contact-main">
         <h1>Contact</h1>
-        <p>Please feel free to contact me for any job/internship opportunities as a developer. Thanks for taking the time out of your day to visit my website!</p>
-        <a href="mailto:shahidtaha100@gmail.com">Send Me An Email</a>
-        <a href="https://www.linkedin.com/in/taha-shahid-762a55307/">Visit My Linked In</a>
-        <a href="tel:+559-387-7622">558-387-7622</a>
-        <a href="https://github.com/TahaS-Coding">Visit My GitHub</a>
+        <div class="contact-box">
+            <p>Please feel free to contact me for any job/internship opportunities as a developer. Thanks for taking the time out of your day to visit my website!</p>
+            <div class="contact-buttons">
+                <a class="button" href="mailto:shahidtaha100@gmail.com"><img src="images/email-resume.svg" alt="email icon"><span>Send Me An Email</span></a>
+                <a class="button" href="https://www.linkedin.com/in/taha-shahid-762a55307/"><img src="images/linkedin-contact.svg" alt="LinkedIn icon"><span>Visit My Linked In</span></a>
+                <a class="button" href="tel:+559-387-7622"><img src="images/phone-resume.svg" alt="phone icon"><span>558-387-7622</span></a>
+                <a class="button" href="https://github.com/TahaS-Coding"><img src="images/github-resume.svg" alt="GitHub icon"><span>Visit My GitHub</span></a>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy;2024 Taha Shahid</p>
-        <a href="https://www.linkedin.com/in/taha-shahid-762a55307/"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
-        <a href="https://github.com/TahaS-Coding"><img src="images/github-icon.svg" alt="GitHub icon"></a>
-        <a href="mailto:shahidtaha100@gmail.com"><img src="images/email-icon.svg" alt="email icon"></a>
+        <div class="footer-wrapper">
+            <p>&copy;2024 Taha Shahid</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/taha-shahid-762a55307/" class="footer-linkedin"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
+                <a href="https://github.com/TahaS-Coding" class="footer-github"><img src="images/github-icon.svg" alt="GitHub icon"></a>
+                <a href="mailto:shahidtaha100@gmail.com" class="footer-email"><img src="images/email-icon.svg" alt="email icon"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

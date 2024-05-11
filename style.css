@@ -30,7 +30,7 @@ header {
     padding: 5px 10px;
 }
 
-main {
+body {
     background-image: linear-gradient(#63b2ebbc, #5FACE3);
 }
 .button{
@@ -324,6 +324,50 @@ footer {
     margin-bottom: 15px;
 }
 
+
+/* contact */
+.contact-main h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+}
+.contact-box{
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    width: 850px;
+    border-radius: 20px;
+    margin-bottom: 500px;
+}
+.contact-box p{
+    color: #254459;
+    font-size: 22px;
+    margin: 20px 40px;
+}
+.contact-buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.contact-buttons .button{
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 1vh;
+    padding: 7.5px 0;
+    margin: 10px 40px;
+}
+.contact-buttons .button span{
+    font-size: 22px;
+    font-weight: 500;
+}
+.contact-buttons .button img{
+    margin:0 4px;
+    width: 40px;
+}
 /* header button animation */
 .site-nav>a:hover {
     animation: bg-hover ease-out 1s, color-hover ease-out 0.25s;
