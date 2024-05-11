@@ -368,6 +368,54 @@ footer {
     margin:0 4px;
     width: 40px;
 }
+
+
+/* about */
+.about-main h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+}
+.about-row, .about-row-reverse{
+    background-color: white;
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 1.5vh;
+}
+.about-row div, .about-row-reverse div{
+    width: 65%;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+.about-row-reverse div{
+    margin-right: 20px;
+}
+.about-row img, .about-row-reverse img{
+    width: 30%;
+    height: 396.8px;
+    object-fit: cover;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+.about-row-reverse img{
+    order: -1;
+    margin-left: 20px;
+}
+.about-row h2, .about-row-reverse h2{
+    color: #254459;
+    font-weight: 500;
+    font-size: 40px;
+}
+.about-row p, .about-row-reverse p{
+    color: #254459;
+    font-size: 22px;
+}
+
+
+
 /* header button animation */
 .site-nav>a:hover {
     animation: bg-hover ease-out 1s, color-hover ease-out 0.25s;
