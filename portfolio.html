@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Portfolio</a>
-            <a href="resume.html">Resume</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
+        <nav class="site-nav">
+            <a href="index.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Home</a>
+            <a href="#"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Portfolio</a>
+            <a href="resume.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Resume</a>
+            <a href="about.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>About Me</a>
+            <a href="contact.html"><span class="span-one"></span><span class="span-two"></span><span
+                    class="span-three"></span>Contact</a>
         </nav>
     </header>
-    <main>
+    <main class="portfolio-main">
         <h1>Portfolio</h1>
-        <section>
-            <h2>Web Development</h2>
-            <p>I have 1 year of experience learning and applying industry standard web development skills to deploy rich and user friendly applications.</p>
-            <p>Skills: HTML, CSS, Javascript, Figma, GitHub</p>
-            <a href="">Visit Portfolio</a>
+        <section class="row">
+            <div>
+                <h2>Web Development</h2>
+                <p>I have 1 year of experience learning and applying industry standard web development skills to deploy rich and user friendly applications.</p>
+                <p>Skills: <span>HTML, CSS, Javascript, Figma, GitHub</span></p>
+                <a class="button" href="">Visit Portfolio</a>
+            </div>
             <img src="images/web-dev.png" alt="image of programming"></section>
-        <section>
-            <h2>Game Development</h2>
-            <p>Game development is a hobby of mine, I enjoy the satisfaction I get from completing my own games that I put hard work into.</p>
-            <p>Skills: Unity, C#, Blender</p>
-            <a href="">Visit Portfolio</a>
+        <section class="row-reverse">
+            <div>
+                <h2>Game Development</h2>
+                <p>Game development is a hobby of mine, I enjoy the satisfaction I get from completing my own games that I put hard work into.</p>
+                <p>Skills: <span>Unity, C#, Blender</span></p>
+                <a class="button" href="">Visit Portfolio</a>
+            </div> 
             <img src="images/game-dev.jpg" alt="image of a console game controller"></section>
-        <section>
-            <h2>Writing</h2>
-            <p>View my written language skills based on the essays I write during the school year.</p>
-            <a href="">Visit Portfolio</a>
+        <section class="row">
+            <div>
+                <h2>Writing</h2>
+                <p>View my written language skills based on the essays I write during the school year.</p>
+                <a class="button" href="">Visit Portfolio</a>
+            </div>
             <img src="images/writing.png" alt="image of a pen on paper"></section>  
     </main>
     <footer>
-        <p>&copy;2024 Taha Shahid</p>
-        <a href="https://www.linkedin.com/in/taha-shahid-762a55307/"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
-        <a href="https://github.com/TahaS-Coding"><img src="images/github-icon.svg" alt="GitHub icon"></a>
-        <a href="mailto:shahidtaha100@gmail.com"><img src="images/email-icon.svg" alt="email icon"></a>
+        <div class="footer-wrapper">
+            <p>&copy;2024 Taha Shahid</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/taha-shahid-762a55307/" class="footer-linkedin"><img src="images/linkedin-icon.svg" alt="LinkedIn icon"></a>
+                <a href="https://github.com/TahaS-Coding" class="footer-github"><img src="images/github-icon.svg" alt="GitHub icon"></a>
+                <a href="mailto:shahidtaha100@gmail.com" class="footer-email"><img src="images/email-icon.svg" alt="email icon"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
