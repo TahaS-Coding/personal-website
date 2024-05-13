@@ -450,6 +450,115 @@ footer {
 .portfolio-main section:nth-of-type(3) img{
     height: 190px;
 }
+
+/* web portfolio */
+.web-main h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+}
+.web-row, .web-row-reverse{
+    margin: 40px 10%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.web-written{
+    width: 55%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.web-written>div{
+    background-color: white;
+    border-radius: 1.5vh;
+}
+.web-row h2, .web-row-reverse h2{
+    color: #254459;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.web-row p, .web-row-reverse p{
+    color: #254459;
+    font-size: 22px;
+    margin: 0 15px;
+}
+.web-icons{
+    margin: 5px 15px;
+}
+
+.web-row-reverse .computer-graphic-container{
+    order: -1;
+}
+.computer-graphic-container{
+    width: 45%;
+}
+.computer-graphic-container figure{
+    position: relative;
+}
+.computer-graphic-container img:first-of-type{
+    width: 100%;
+}
+.computer-graphic-container .button{
+    position: absolute;
+    top: 68.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 25%;
+    font-size: 1.25vw;
+    font-weight: 500;
+    border-radius: 0.75vh;
+    text-align: center;
+    padding: 0.5% 0;
+}
+.web-button-left, .web-button-right{
+    border: none;
+    background-color: #5091BF;
+    position: absolute;
+    top: 68.5%;
+    display: block;
+    width: 10%;
+    font-size: 1.25vw;
+    font-weight: 500;
+    border-radius: 0.75vh;
+    text-align: center;
+    padding: 0.5% 0;
+}
+.web-button-left{
+    left: 25%;
+    background-color: #437aa1;
+}
+.web-button-right{
+    left: 65%;
+}
+.web-button-left:hover, .web-button-right:hover{
+    background-color: #437aa1;
+}
+.web-button-left:active, .web-button-right:hover{
+    background-color: #437aa1;
+}
+.web-fill-image{
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 76.7%;
+    height: 50.4%;
+    top: 17.1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-transition{
+    background-color: black;
+    position: absolute;
+    width: 76.7%;
+    height: 50.4%;
+    top: 17.1%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
 /* header button animation */
 .site-nav>a:hover {
     animation: bg-hover ease-out 1s, color-hover ease-out 0.25s;
