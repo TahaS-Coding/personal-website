@@ -385,22 +385,22 @@ footer {
     justify-content: space-between;
     border-radius: 1.5vh;
 }
-.row div, .row-reverse div{
+.row>div, .row-reverse>div{
     width: 65%;
     margin: 20px 0;
     margin-left: 20px;
 }
-.row-reverse div{
+.row-reverse>div{
     margin-right: 20px;
 }
-.row img, .row-reverse img{
+.row>img, .row-reverse>img{
     width: 30%;
     height: 396.8px;
     object-fit: cover;
     margin: 20px 0;
     margin-right: 20px;
 }
-.row-reverse img{
+.row-reverse>img{
     order: -1;
     margin-left: 20px;
 }
@@ -559,6 +559,59 @@ footer {
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
 }
+
+/* Game dev */
+.game-main h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+}
+.game-icons{
+    margin: 5px 15px;
+}
+.game-main .row>img{
+    height: 530px;
+}
+.game-main .row-reverse>img{
+    height: 670px;
+}
+
+/* writing */
+.writing-main h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+}
+.writing-column{
+    background-color: white;
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-radius: 1.5vh;
+}
+.writing-column h2{
+    color: #254459;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.writing-column p{
+    color: #254459;
+    font-size: 22px;
+    width: 95%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.writing-main iframe{
+    width: 95%;
+    aspect-ratio: 4/3;
+    align-self: center;
+    margin-bottom: 20px;
+}
 /* header button animation */
 .site-nav>a:hover {
     animation: bg-hover ease-out 1s, color-hover ease-out 0.25s;
@@ -711,4 +764,9 @@ footer {
 /* h2 animation */
 .home-wrapper h2{
     transition: opacity 0.5s ease-in-out;
+}
+
+/* tablet */
+@media only screen and (max-width:1024px){
+
 }
