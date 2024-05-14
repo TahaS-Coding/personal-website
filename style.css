@@ -772,6 +772,9 @@ footer {
 
 /* mobile */
 @media only screen and (max-width:480px){
+    main{
+        min-height: 100vh;
+    }
     /* header */
     header button{
         display: block;
@@ -787,7 +790,7 @@ footer {
     }
     .site-nav {
         background-color: #42789E;
-        position: fixed;
+        position: absolute;
         overflow: hidden;
         z-index: 1;
         margin: auto;
@@ -835,9 +838,174 @@ footer {
     }
     .home-wrapper h1{
         text-align: center;
-        font-size: 70px;
+        font-size: 11vw;
     }
     .home-wrapper h2{
         text-align: center;
+        font-size: 6vw;
     }
+    .home-squares section a{
+        font-size: 3vw;
+    }
+    /* resume */
+    .resume-main{
+        overflow: scroll;
+        width: 90%;
+        margin: auto;
+    }
+    .resume-main h1{
+        font-size: 11vw;
+    }
+    .resume-wrapper{
+        width: 100%;
+        height: 900px;
+    }
+    .resume-wrapper h2{
+        font-size: 5vw;
+        margin-top: 20px;
+    }
+    .resume-column-two p{
+        font-size: 4vw;
+        width: 80%;
+        height: 30px;
+        margin-bottom: 82px;
+    }
+    .resume-heading-three{
+        height: 30px;
+    }
+    .resume-heading-three span{
+        height: 30px;
+        width: 25px;
+    }
+    .resume-heading-three h3{
+        font-size: 5vw;
+        padding-left: 15px;
+    }
+    .resume-column-two h4{
+        font-size: 3vw;
+    }
+    .resume-column-two li{
+        font-size: 2vw;
+    }
+    .resume-column-two>section:nth-of-type(2) section{
+        padding-left: 5px;
+    }
+    .resume-column-two>section:nth-last-of-type(2){
+        margin-bottom: 95px;
+    }
+    .resume-column-two>section:nth-of-type(3) li{
+        padding-left: 5px;
+    }
+    .resume-column-two>section:nth-of-type(3) li a{
+        padding-left: 5px;
+    }
+    .resume-column-two>section:nth-of-type(3) li span{
+        padding-left: 5px;
+    }
+    .resume-column-three>section:nth-of-type(1) h3{
+        margin-top: 20px;
+    }
+    .resume-column-three>section:nth-of-type(1){
+        margin-bottom: 10px;
+    }
+    .resume-column-three h3{
+        font-size: 5vw;
+    }
+    .resume-column-three h4{
+        font-size: 3vw;
+    }
+    .resume-column-three>section:nth-of-type(1), .resume-column-three>section:nth-of-type(2) section, .resume-column-three>section:nth-of-type(3) section{
+        padding-left: 5px;
+    }
+    .resume-column-three p{
+        font-size: 2vw;
+    }
+    .resume-column-three li{
+        font-size: 2vw;
+    }
+    .resume-column-three li ul{
+        padding-left: 10%;
+    }
+    .resume-column-three li ul li{
+        font-size: 1.9vw;
+    }
+    .resume-column-three>section:nth-of-type(3) .resume-heading-three{
+        height: 60px;
+    }
+    .resume-column-three>section:nth-of-type(3) .resume-heading-three span{
+        height: 60px;
+    }
+    .resume-column-four{
+        background-color: #072739;
+        width: 7%;
+    }
+    .resume-main .button{
+        width: 150px;
+        font-size: 16px;
+    }
+    /* contact */
+    .contact-main h1{
+        font-size: 11vw;
+    }
+    .contact-box{
+        width: 90%;
+        border-radius: 1.5vh;
+    }
+    .contact-box p{
+        font-size: 4vw;
+        margin: 20px 10px;
+    }
+    .contact-buttons{
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .contact-buttons .button{
+        width: 40%;
+        margin: 10px 10px;
+    }
+    .contact-buttons .button span{
+        font-size: 3vw;
+    }
+    .contact-buttons .button img{
+        width: 5vw;
+    }
+    /* about */
+    .about-main h1{
+        font-size: 11vw;
+    }
+    .row, .row-reverse{
+        width: 90%;
+        flex-flow: column nowrap;
+    }
+    .row>div, .row-reverse>div{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .row>img, .row-reverse>img{
+        width: 90%;
+        height: 250px;
+        margin: 20px auto;
+    }
+    .row h2, .row-reverse h2{
+        text-align: center;
+        font-size: 7vw;
+    }
+    .row p, .row-reverse p{
+        font-size: 4vw;
+    }
+    /* portfolio */
+    .portfolio-main h1{
+        font-size: 11vw;
+    }
+    .portfolio-main .button{
+        width: 40%;
+        font-size: 4vw;
+    }
+    .portfolio-main section:nth-of-type(1) img, .portfolio-main section:nth-of-type(2) img{
+        height: 250px;
+    }
+    .portfolio-main section:nth-of-type(3) img{
+        height: 250px;
+    }
+
 }
