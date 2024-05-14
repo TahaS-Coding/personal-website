@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
             for(anchor of document.querySelectorAll(".site-nav a")){
                 anchor.style.opacity = 1;
             }
+            document.body.style.overflow = "hidden";
         }
         else{
             dropDown.style.width = "0";
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
             for(anchor of document.querySelectorAll(".site-nav a")){
                 anchor.style.opacity = 0;
             }
+            document.body.style.overflow = "";
         }
     })
 })

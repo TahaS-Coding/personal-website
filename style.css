@@ -788,6 +788,7 @@ footer {
     .site-nav {
         background-color: #42789E;
         position: fixed;
+        overflow: hidden;
         z-index: 1;
         margin: auto;
         width: 0;
