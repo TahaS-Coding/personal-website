@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // heading animation
     let heading = document.getElementById("homeHeading");
     headingAnimation();
-    setInterval(headingAnimation, 4000);
+    // setInterval(headingAnimation, 4000);
     function headingAnimation(){
         heading.style.opacity = 0;
         // wait for heading to fade before switching title with setTimeout
@@ -44,5 +44,8 @@ document.addEventListener("DOMContentLoaded", function(){
             }
             heading.style.opacity = 1;
         }, 500);
+        setTimeout(() => {
+            headingAnimation();
+        }, 4500);
     }
 })
