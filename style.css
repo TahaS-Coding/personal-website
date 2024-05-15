@@ -1007,5 +1007,70 @@ footer {
     .portfolio-main section:nth-of-type(3) img{
         height: 250px;
     }
+    /* web */
+    .web-main h1{
+        font-size: 9vw;
+    }
+    .web-row, .web-row-reverse{
+        flex-flow: column nowrap;
+    }
+    .web-written{
+        width: 100%;
+    }
+    .web-row h2, .web-row-reverse h2{
+        font-size: 6vw;
+        margin: 0 5px;
+    }
+    .web-row p, .web-row-reverse p{
+        font-size: 4vw;
+    }
+    .web-icons img{
+        width: 45px;
+    }
 
+    .computer-graphic-container{
+        width: 100%;
+    }
+
+    .computer-graphic-container .button{
+        top: 68%;
+        font-size: 3.5vw;
+        padding: 0 0;
+    }
+    .web-button-left, .web-button-right{
+        top: 68%;
+        font-size: 3.5vw;
+        padding: 0 0;
+    }
+    .web-row-reverse .computer-graphic-container{
+        order: 0;
+    }
+
+    /* Game dev */
+    .game-main h1{
+        font-size: 9vw;
+    }
+    .game-icons img{
+        width: 45px;
+    }
+
+    /* writing */
+    .writing-main h1{
+        font-size: 11vw;
+    }
+    .writing-column{
+        width: 90%;
+    }
+    .writing-column h2{
+        font-size: 6vw;
+    }
+    .writing-column p{
+        font-size: 4vw;
+    }
+    .writing-main iframe{
+        width: 95%;
+        aspect-ratio: 4/3;
+        align-self: center;
+        margin-bottom: 20px;
+    }
 }
