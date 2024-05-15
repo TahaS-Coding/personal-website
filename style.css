@@ -885,7 +885,8 @@ footer {
         background-color: transparent;
         border: none;
         padding-left: 15px;
-        padding-top: 15px;
+        padding-top: 7.5px;
+
         width: 75px;
         height: 75px;
     }
@@ -997,7 +998,7 @@ footer {
     .resume-column-two p {
         font-size: 4vw;
         width: 80%;
-        height: 30px;
+        height: auto;
         margin-bottom: 82px;
     }
 
